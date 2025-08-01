@@ -60,3 +60,41 @@ header nav{
     padding: 20px 40px;
     text-align: center;
 }
+/*Style for login.html*/
+.bdy-lgn{
+    background-color: antiquewhite;
+    display: flex;
+}
+.lgn{
+    background-color: aliceblue;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5px 1.5px;
+}
+.h-lgn h1{
+    background-color: burlywood;
+    font-style: oblique;
+   text-align: center;
+}
+.btninicio{
+    text-align: center;
+}
+/*style for "encargo.html"*/
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: burlywood;
+    padding: 10px 10px;
+}
+.menu a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: left;
+}
+.encargos{
+    background-color: aliceblue;
+}

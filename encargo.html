@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MC-Encargo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <p class="logo">Muebles Cardonal</p>
+            <nav>
+            <a class="a-f"href="https://www.facebook.com/share/1Lgz83LKLY/">Facebook</a>
+            
+            </nav>
+        </div>
+    </header>
+    <div class="menu">
+        <a href="">Puertas</a>
+        <a href="">Cocinas</a>
+        <a href="">Closets</a>
+    </div>
+    <div class="encargos">
+        <form >
+            <label for="medidas">Medidas</label>
+            <div class="medid">
+                <label for="alto">Alto</label>
+                <input type="number" name="alto" id="alto">
+                <label for="ancho">Ancho</label>
+                <input type="number" name="ancho" id="ancho">
+            </div>
+            <label for="diseño">Diseño</label>
+            <div class="dis">
+                <label for="color">Color</label>
+                <select name="color">
+                    <option value="black">Negro</option>
+                    <option value="white">Blanco</option>
+                    <option value="grey">Gris</option>
+                    <option value="other">Otro</option>
+                </select>
+                <label for="specs">Especificaciones</label>
+                <input type="text" name="specs" id="specs">
+            </div>
+            <label for="total">Total</label>
+            <div class="total">
+                <button>calcular precio</button>
+                <input type="text" name="ttl">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
