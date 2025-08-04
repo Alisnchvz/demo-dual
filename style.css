@@ -49,7 +49,7 @@ header nav{
 }
 .cate-p nav{
     background-color: burlywood;
-    padding: 10px 10px;
+    padding: 20px 20px;
 }
 .cate-p nav a{
     max-width: 1400px;
@@ -57,7 +57,7 @@ header nav{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     text-decoration: none;
-    padding: 20px 40px;
+    padding: 20px 20px;
     text-align: center;
 }
 /*Style for login.html*/
@@ -97,4 +97,52 @@ header nav{
 }
 .encargos{
     background-color: aliceblue;
+}
+/*style for categoria-puertas.html*/
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div figure{
+    display: inline-block;
+  margin: 10px;
+}
+img{
+    width: 300px;
+    display: block;
+}
+div figcaption{
+    width: 300px;
+    font-size: 20px;
+    background-color: blanchedalmond;
+    text-align: justify;
+}
+
+/*style for section class productos*/
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.productos div {
+  display: flex;             
+  flex-direction: column;    
+  align-items: center;
+}
+
+.productos div figure {
+  display: inline-block;
+  margin: 10px;
+}
+
+.productos div img {
+  width: 100px;
+  display: block;
+}
+
+.productos div figcaption {
+  width: 100px;              
+  font-size: 15px;
+  background-color: blanchedalmond;
+  text-align: justify;
 }
