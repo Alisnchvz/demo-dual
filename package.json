@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Seguimiento del proyecto de demostración dual\r ¿En qué consiste el proyecto?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisnchvz/d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisnchvz/d/issues"
+  },
+  "homepage": "https://github.com/Alisnchvz/d#readme",
+  "dependencies": {
+    "mongoose": "^8.17.1"
+  }
+}

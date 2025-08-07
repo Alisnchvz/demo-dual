@@ -106,7 +106,7 @@ div{
 }
 div figure{
     display: inline-block;
-  margin: 10px;
+    margin: 10px;
 }
 img{
     width: 300px;
@@ -144,5 +144,30 @@ div figcaption{
   width: 100px;              
   font-size: 15px;
   background-color: blanchedalmond;
-  text-align: justify;
+  text-align: left;
+}
+/*Style for page of the products*/
+
+.info{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.info img{
+    width: 300px;
+}
+.info-form{
+    background-color: bisque;
+    padding-bottom: 210px;
+    width: 200px;
+}
+.info-form .title{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 40px;
+}
+.info-form .colour{
+    font-family: monospace;
+    font-size: 25px;  
+    color: gray; 
 }
