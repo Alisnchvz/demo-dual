@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MC-Encargo</title>
+    <link rel="icon" type="image/jpg" href="icon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,6 +30,11 @@
                 <input type="number" name="alto" id="alto">
                 <label for="ancho">Ancho</label>
                 <input type="number" name="ancho" id="ancho">
+                <div id="profu">
+                    <label for="prof">Profundidad</label>
+                <input type="number" name="prof" id="prof">
+                </div>
+                
             </div>
             <label class="lbl" for="diseño">Diseño</label>
             <div class="dis">
@@ -53,6 +59,18 @@
             </div>
         </form>
     </div>
-    <script src="encargo.js"></script>
+    <script src="encargo.js">
+        const puertas = document.getElementById('pue-enc');
+        const cocinas = document.getElementById('coc-enc');
+        const closets = document.getElementById('clo-enc');
+        const inputcajones = document.getElementById('cajns');
+        const inputprof = document.getElementById('profu');
+            inputprof.style.display = "none";
+            inputcajones.style.display = "none";
+            puertas.style.color= '#ff003cff';
+            cocinas.style.color= '#00000cff';
+            closets.style.color= '#00000cff';
+        
+    </script>
 </body>
 </html>
