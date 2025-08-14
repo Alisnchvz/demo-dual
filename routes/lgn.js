@@ -3,8 +3,8 @@ const path = require('path');
 const express = require('express');
 const router =express.Router();
 
-router.get('/login',(req, res, next) =>{
-    res.sendFile(path.join(__dirname, '../login.html' ));
-});
+const lgnController = require('../controllers/lgnC');
+
+router.get('/login',lgnController.login);
 
 module.exports= router;

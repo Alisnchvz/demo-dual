@@ -3,8 +3,8 @@ const path = require('path');
 const express = require('express');
 const router =express.Router();
 
-router.get('/catepuertas',(req, res, next) =>{
-    res.sendFile(path.join(__dirname, '../cate_puertas.html' ));
-});
+const catePueController =require('../controllers/catePuertasC');
+
+router.get('/catepuertas',catePueController.catePuertas);
 
 module.exports= router;

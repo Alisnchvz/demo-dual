@@ -3,8 +3,8 @@ const path = require('path');
 const express = require('express');
 const router =express.Router();
 
-router.get('/PueDos',(req, res, next) =>{
-    res.sendFile(path.join(__dirname, '../P_d.html' ));
-});
+const pueDosController = require('../controllers/pdosC');
+
+router.get('/PueDos',pueDosController.pueDos);
 
 module.exports= router;

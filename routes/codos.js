@@ -3,8 +3,8 @@ const path = require('path');
 const express = require('express');
 const router =express.Router();
 
-router.get('/CocDos',(req, res, next) =>{
-    res.sendFile(path.join(__dirname, '../Co_d.html' ));
-});
+const coDosController = require('../controllers/codosC');
+
+router.get('/CocDos',coDosController.coDos);
 
 module.exports= router;
