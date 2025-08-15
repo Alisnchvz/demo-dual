@@ -4,6 +4,7 @@ const express = require('express');
 const app= express();
 
 app.use(express.static(path.join(__dirname, 'public'))); //sirve para agregar el style.css
+app.use(express.urlencoded({ extended: false })); //sirve para convertir los datos a js y poder manipularlo mejor
 
 const adminRoutes = require('./routes/main');
 const encRoutes = require('./routes/enc');

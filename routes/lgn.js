@@ -6,5 +6,6 @@ const router =express.Router();
 const lgnController = require('../controllers/lgnC');
 
 router.get('/login',lgnController.login);
+router.get('/',lgnController.logindatos);
 
 module.exports= router;
