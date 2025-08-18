@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="icon" type="image/jpg" href="./public/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bdy-lgn">
+    <form class="lgn" id="form-login" action="/signIn" method="post">
+        <header class="h-lgn">
+            <H1>INICIO DE SESION</H1>
+        </header>
+        <label for="email">Correo Electronico</label>
+        <input type="text" name="correo" id="email" required>
+        <div>
+            <button class="btninicio" type="submit">Iniciar</button> 
+        </div>
+    </form>
+    <script>
+    document.getElementById("form-login").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        
+        const correo = document.getElementById("email").value;
+
+        const res = await fetch('http://localhost:5500/autenticacion', {method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ correo })
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      localStorage.setItem("token", data.token);
+
+      // Redirigir a página principal
+      window.location.href = "/";
+    } else {
+      alert(data.mensaje);
+    }
+  });
+</script>
+</body>
+</html>

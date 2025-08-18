@@ -23,23 +23,23 @@
         <a id="clo-enc">Closets</a>
     </div>
     <div class="encargos">
-        <form class="encargos">
+        <form class="encargos"  action="/crearEncargo" method="post">
             <label class="lbl" for="medidas">Medidas</label>
             <div class="medid">
                 <label  for="alto">Alto</label>
-                <input type="number" name="alto" id="alto">
+                <input type="number" name="alto" id="alto" required>
                 <label for="ancho">Ancho</label>
-                <input type="number" name="ancho" id="ancho">
+                <input type="number" name="ancho" id="ancho" required>
                 <div id="profu">
                     <label for="prof">Profundidad</label>
-                <input type="number" name="prof" id="prof">
+                <input type="number" name="profundidad" id="prof" required>
                 </div>
                 
             </div>
             <label class="lbl" for="diseño">Diseño</label>
             <div class="dis">
                 <label class="lbl" for="color">Color</label>
-                <select name="color">
+                <select name="color" required>
                     <option value="black">Negro</option>
                     <option value="white">Blanco</option>
                     <option value="grey">Gris</option>
@@ -47,14 +47,14 @@
                 </select>
                 <div id="cajns">
                     <label  for="cajones">Cant. Cajones</label>
-                    <input type="number" name="cajones_n" id="cajones">
+                    <input type="number" name="cajones" id="cajones" required>
                 </div>
                 <label for="specs">Especificaciones</label>
-                <input type="text" name="specs" id="specs">
+                <input type="text" name="especificaciones" id="specs" required>
             </div>
             
             <div class="btns-enc">
-                <button class="btnsend">Enviar</button>
+                <button class="btnsend" type="submit">Enviar</button>
                 <button class="btnannular">Deshacer</button>
             </div>
         </form>
